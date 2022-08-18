@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Главная</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"/>
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" href="css/media.css"/>
   </head>
@@ -50,6 +51,14 @@
             </ul>
           </nav>
 
+          <div class="footer__social social--mobile">
+            <a href=""><i class="fab fa-vk" ></i></a>
+            <a href=""><i class="fab fa-instagram" ></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+          </div>
+
+          <a id="callbackBtn" class="button-style button-style--mint button--mobile" href="">Обсудить проект</a>
+          
         </div>
       </div>
     </header>
@@ -264,8 +273,55 @@
     </div>
   </footer>
 
+  <div class="popup-layer">
+    <div class="popup-container">
+      <div class="popup popup__form">
+        <div class="popup-wrapper">
+            <a class="popup-close">
+                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+            </a>
+          <div class="popup-header">
+            <p class="page-title">Форма обратной связи</p>
+          </div>
+          <div class="popup-form">
+            <form id="form-popup" type="POST">
+              <div class="form-col-row">
+                <input id="name" type="text" name="name" placeholder="Как к вам обращаться?" required="required">
+              </div>
+              <div class="form-col-row">
+                <input id="popup_phone" type="text" name="phone" placeholder="+7" required="required" inputmode="text">
+              </div>
+              <div class="form-col-row">
+                <input id="email" type="email" name="mail" placeholder="Введите адрес электронной почты" required="required">
+              </div>
+              <div class="form-col-row">
+                <textarea id="textarea" type="text" name="text" placeholder="Кратко опишите суть вашего обращения" required="required"></textarea>
+              </div>
+              <div class="popup-agreement">
+                <input id="agreement" type="checkbox" name="agreement" style="display: none" checked="checked" required="required">
+                <label for="agreement"></label><span>Нажимая кнопку отправить вы соглашаетесь с <a href="#">условиями обработки персональных данных</a> и <a href="#">политикой конфиденциальности</a></span>
+              </div>
+              <button class="button-style button-style--mint" id="submit" type="submit">Отправить сообщение</button>
+            </form>
+            
+          </div>
+        </div>
+      </div>
+      <div class="popup popup-success hide">
+        <div class="popup-wrapper">
+            <a class="popup-close">
+                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+            </a>
+            <i class="fal fa-check-circle"></i>
+          <p>Спасибо!</p><span>Ваше сообщение отправлено</span>
+          <a class="button-style">Вернуться на сайт</a>
+        </div>
+      </div>
+     </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

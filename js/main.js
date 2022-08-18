@@ -77,11 +77,6 @@ $(document).ready(function() {
     $('#callbackBtn').on('click', function(e) {
         e.preventDefault();
         $('.popup-layer, .popup-container').addClass('opened');
-        // $('body').addClass('popup-opened');
-
-        // if ($(window).width() < 1024) {
-        //     $(window).scrollTop(0);
-        // }
     });
 
     $('.popup-close').on('click', function(e) {

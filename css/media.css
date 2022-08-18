@@ -558,6 +558,16 @@
         transition: all .5s ease;
     }
 
+    .header__bottom .button--mobile {
+        display: block;
+    }
+
+    .header__bottom .social--mobile {
+        display: flex;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
 }
 
 

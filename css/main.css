@@ -172,6 +172,14 @@ header .container {
   z-index: 111111;
 }
 
+.header__bottom .button--mobile {
+  display: none;
+}
+
+.header__bottom .social--mobile {
+  display: none;
+}
+
 .header__nav-list-inner {
   display: flex;
   flex-direction: column;
