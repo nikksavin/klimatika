@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Контакты</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"/>
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <div class="header__top">
+          <div class="header__logo"><img src="../img/logo.png" alt=""/></div>
+          <div class="header__logo-mobile"><img src="../img/logo-mob.png" alt=""/></div>
+          <div class="header__buttons"><a class="button-style button-style--mint" href="">Обсудить проект</a>
+            <div class="header__links"><a class="header__link header__link--phone" href="tel:+7 (495) 542-22-82">+7 (495) 542-22-82</a><a class="header__link header__link--mail" href="mailto:info@wheil.pro">info@wheil.pro</a></div>
+          </div>
+
+          <div class="header__burger">
+            <div class="icon-burger" id="burgerBtn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+        </div>
+        <div class="header__bottom">
+
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="nav__menu-item"> <a href="">Оборудование <i class="fas fa-chevron-down"></i></a>
+                <ul class="header__nav-list-inner">
+                  <li class="nav__sub-menu-item"><a href=""> Промышленные чиллеры</a></li>
+                  <li class="nav__sub-menu-item"><a href=""> Драй кулеры и градирни</a></li>
+                  <li class="nav__sub-menu-item"><a href=""> Термоконтроллеры</a></li>
+                  <li class="nav__sub-menu-item"><a href=""> Компоненты систем охлаждения</a></li>
+                  <li class="nav__sub-menu-item"><a href=""> Специальные версии</a></li>
+                </ul>
+              </li>
+              <li class="nav__menu-item"><a href=""> Услуги</a></li>
+              <li class="nav__menu-item"><a href=""> Отпрасли</a></li>
+              <li class="nav__menu-item"><a href=""> Новости</a></li>
+              <li class="nav__menu-item"><a href=""> Компания</a></li>
+              <li class="nav__menu-item"><a href=""> Контакты</a></li>
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+    </header>
+
+
+
+    <main>
+
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs-wrapper">
+                    <div class="breadcrumbs-item"><a href="/"><img src="./img/icons/home.png" alt=""></a></div>
+                    <span class="breadcrumbs-separator">—</span>
+                    <div class="breadcrumbs-item">
+                        <a class="" href="/catalog/" title="Название новости">
+                            Контакты
+                        </a>
+                    </div>
+                </div>
+                <h1 class="page-title">Контакты</h1>
+            </div>
+        </div>
+
+        <section class="contact__items">
+            <div class="container">
+                
+                <div class="contact__item">
+                    <div class="contacts__item-img">
+                        <img src="./img/cont1.png" alt="">
+                    </div>
+                    <div class="contact__item-content">
+                        <div class="contact__item-title">ООО "НПТ Энергия"<br>
+                            Направление<br>
+                            промышленного холода:</div>
+                        <div class="contact__item-desc">+7 (495) 542-22-82, доб. 192</div>
+                    </div>
+                </div>
+
+                <div class="contact__item">
+                    <div class="contacts__item-img">
+                        <img src="./img/cont2.png" alt="">
+                    </div>
+                    <div class="contact__item-content">
+                        <div class="contact__item-title">ООО "НПТ Энергия"<br>
+                            / ООО "НПТ Климатика"<br>
+                            Офис в г.Москва:</div>
+                        <div class="contact__item-desc">Варшавское ш., д.1. (БЦ W-PLAZA)</div>
+                    </div>
+                </div>
+
+                <div class="contact__item">
+                    <div class="contacts__item-img">
+                        <img src="./img/cont3.png" alt="">
+                    </div>
+                    <div class="contact__item-content">
+                        <div class="contact__item-title">ООО "НПТ Климатика"<br>
+                            Производственный комплекс:</div>
+                        <div class="contact__item-desc">142181, МО, г.о. Подольск,<br>
+                            мкр-н Климовск, ул. Ленина, д.1</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contacts__form">
+            <div class="container">
+                <div class="page-title">Форма обратной связи</div>
+                <form class="" action="">
+                    <div class="form__left">
+                        <label class="form__label" for="name"><input class="form__input" required="" type="text" name="name" placeholder="Введите ваше имя"> </label>
+                        <label class="form__label" for="phone"><input class="form__input" id="contacts_page_phone" required="" type="text" name="phone" placeholder="Телефон" inputmode="text"> </label>
+                        <label class="form__label" for="mail"><input class="form__input" required="" type="text" name="mail" placeholder="E-mail"> </label>
+                        <div class="form-group">
+                            <input checked type="checkbox" id="html">
+                            <label for="html">Согласие на обработку персональных данных</label>
+                        </div>
+                    </div>
+                    <div class="form__right">
+                        <textarea class="form_textarea" type="text" placeholder="Введите текст сообщения" name="text"></textarea>
+                        <input class="button-style button-style--mint" type="submit" value="Отправить сообщение">
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+
+  <footer>
+    <div class="container">
+
+      <div class="footer__left">
+
+          <div class="footer__logo">
+            <img src="./img/logo-footer.png" alt="">
+          </div>
+
+          <div class="footer__left-links">
+            <a href="" class="footer__left-link">Соглашение на обработку персональных данных</a>
+            <div class="footer__left-link">© Copyrights 2022</div>
+            <div class="footer__left-link"> <a href="">Разработка сайта </a> Di-Project</div>
+          </div>
+
+      </div>
+
+
+      <div class="footer__middle">
+
+        <div class="footer__middle-title">Навигация по сайту</div>
+
+        <nav class="footer__nav">
+
+          <ul>
+            <li><a href="">Оборудование</a></li>
+            <li><a href="">Вакансии</a></li>
+            <li><a href="">Услуги</a></li>
+            <li><a href="">Новости</a></li>
+            <li><a href="">Отпрасли</a></li>
+            <li><a href="">Компания</a></li>
+            <li><a href="">Сотрудничество</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+
+        </nav>
+
+        <div class="footer__social">
+          <a href=""><i class="fab fa-vk" ></i></a>
+          <a href=""><i class="fab fa-instagram" ></i></a>
+          <a href=""><i class="fab fa-youtube"></i></a>
+        </div>
+
+      </div>
+
+      <div class="footer__right">
+        
+        <div class="footer__right-item">
+          <div class="footer__right-item-title">ООО «НПТ Климатика» / ООО «НПТ Энергия»</div>
+          <a href="tel:+7 (495) 542-22-82" class="footer__right-link">+7 (495) 542-22-82 доб. 192</a>
+          <a href="mailto:info@wheil.pro" class="footer__right-link--mail">info@wheil.pro</a>
+        </div>
+
+        <div class="footer__right-item">
+          <div class="footer__right-item-title">Производственный комплекс:</div>
+          <a href="" class="footer__right-link">142181, МО, г.о. Подольск, мкр-н Климовск, ул. Ленина, д. 1</a>
+        </div>
+
+        <div class="footer__right-item">
+          <div class="footer__right-item-title">Офис в г. Москва:</div>
+          <a href="" class="footer__right-link">г. Москва, Варшавское ш., д. 1, БЦ W-PLAZA</a>
+        </div>
+
+        <div class="footer__left-links">
+          <a href="" class="footer__left-link">Соглашение на обработку персональных данных</a>
+          <div class="footer__left-link">© Copyrights 2022</div>
+          <div class="footer__left-link"> <a href="">Разработка сайта </a> Di-Project</div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
