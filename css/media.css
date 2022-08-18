@@ -550,11 +550,13 @@
         border: 1px solid;
         padding: 5px 6px;
         border-radius: 7px;
-        rotate: 90deg;
+        /* rotate: 90deg; */
+        transform: rotate(90deg);
     }
 
     .rotate {
-        rotate: none!important;
+        /* rotate: none!important; */
+        transform: rotate(0deg)!important;
         transition: all .5s ease;
     }
 
