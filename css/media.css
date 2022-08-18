@@ -503,9 +503,59 @@
         width: 100%
     }
 
-
     .form__right {
         width: 100%
+    }
+
+    .nav__menu-item:hover .fa-chevron-down:before {
+        content: "\f078";
+    }
+
+    #accordion ul ul {
+        display: none;
+        position: unset;
+    }
+
+    .header__nav-list-inner {
+        transition: none;
+        visibility: visible;
+        background: transparent;
+        box-shadow: none;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .nav__menu-item {
+        padding: 15px 0;
+    }
+
+    .nav__menu-item a {
+        display: inline-flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+  
+      
+    .nav__menu-item.active:before {
+        content: none;
+    }
+
+    .nav__menu-item:hover:before {
+        content: none;
+    }
+
+    .nav__menu-item i {
+        border: 1px solid;
+        padding: 5px 6px;
+        border-radius: 7px;
+        rotate: 90deg;
+    }
+
+    .rotate {
+        rotate: none!important;
+        transition: all .5s ease;
     }
 
 }

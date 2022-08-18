@@ -176,7 +176,7 @@ header .container {
   display: flex;
   flex-direction: column;
   position: absolute;
-  width: auto;
+  width: max-content;
   padding: 20px;
   background: #FFFFFF;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -199,7 +199,34 @@ header .container {
 
 .nav__menu-item {
   padding: 33px 0;
+  position: relative;
 }
+
+.nav__menu-item.active:before {
+  background: #00A870;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  content: '';
+  bottom: 0;
+  transition: .5s;
+}
+
+
+.nav__menu-item:before {
+  background: #00A870;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  content: '';
+  bottom: 0;
+  transition: .5s;
+}
+
+.nav__menu-item:hover:before {
+  width: 100%;
+}
+
 
 .nav__menu-item a {
   font-style: normal;
@@ -213,6 +240,7 @@ header .container {
 .nav__menu-item i {
   font-size: 14px;
   margin-left: 10px;
+  transition: all .5s ease;
 }
 
 .nav__menu-item:hover .fa-chevron-down:before {
@@ -238,6 +266,8 @@ header .container {
   display: none;
   cursor: pointer;
 }
+
+
 
 
 /* End header styles */
@@ -849,10 +879,12 @@ ul.tabs li span {
 ul.tabs li.current{
 	background: #00A870;
 	color: #FFFFFF;
+  transition: all 1s ease;
 }
 
 ul.tabs li.current svg path {
   fill:  #FFFFFF;
+  transition: all 1s ease;
 }
 
 .tab-content{

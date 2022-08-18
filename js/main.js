@@ -18,6 +18,15 @@ $(document).ready(function() {
         }
     });
 
+    // NAV ACCORDION
+    $(".nav__menu-item a").click(function(){
+		$("#accordion ul ul").slideUp(200);
+        $("#accordion ul i").toggleClass("rotate");
+		//slide down the link list below the h3 clicked - only if its closed
+		if(!$(this).next().is(":visible")){
+			$(this).next().slideDown(200);
+		}
+	});
 
     // INIT CATALOG ITEM GALLERY
 
@@ -78,7 +87,6 @@ $(document).ready(function() {
     $('.popup-close').on('click', function(e) {
         e.preventDefault();
         $('.popup-layer, .popup-container').removeClass('opened');
-      
     });
 
     // Закрытие окна на поле
@@ -98,7 +106,4 @@ $(document).ready(function() {
         $('.popup').toggleClass('hide');
     });
     
-
-
 });
-
